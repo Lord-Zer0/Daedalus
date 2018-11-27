@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\KeyScript.cs" />
      <Compile Include="Assets\Scripts\MazeController.cs" />
+     <Compile Include="Assets\Scripts\MenuCamera.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
  <Reference Include="UnityEditor.StandardEvents">
