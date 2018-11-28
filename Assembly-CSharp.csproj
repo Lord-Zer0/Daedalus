@@ -55,13 +55,15 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\InventoryManager.cs" />
      <Compile Include="Assets\Scripts\KeyScript.cs" />
-     <Compile Include="Assets\Scripts\LeaderboardManager.cs" />
+     <Compile Include="Assets\Scripts\LeaderboardView.cs" />
      <Compile Include="Assets\Scripts\LoadGameOnClick.cs" />
      <Compile Include="Assets\Scripts\MazeController.cs" />
      <Compile Include="Assets\Scripts\MenuCamera.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
+     <Compile Include="Assets\Scripts\RankingSystem.cs" />
+     <Compile Include="Assets\Scripts\ToggleText.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Connor/dev/cs4482/Daedalus/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
