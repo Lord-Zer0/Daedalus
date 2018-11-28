@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class MenuCamera : MonoBehaviour {
 
+	bool rotate;
+
 	public float speed = 15f;
+
+	void Start() {
+		rotate = true;
+	}
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(Vector3.up, speed * Time.deltaTime);
+        if (rotate) {
+			transform.Rotate(Vector3.up, speed * Time.deltaTime);
+		}
 	}
 }

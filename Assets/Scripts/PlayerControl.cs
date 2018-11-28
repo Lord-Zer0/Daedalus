@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour {
 
-	private Rigidbody rb;
-
-	private bool[] m_keychain;
+	//private Rigidbody rb;
+	public List<GameObject> gates;
+	//public InventoryManager inventory;
+	public List<GameObject> keys;
 	
 	// Use this for initialization
 	void Start () {
-		rb = GetComponent<Rigidbody>();
+		//rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -24,10 +25,19 @@ public class PlayerControl : MonoBehaviour {
 			other.gameObject.SetActive(false);
 			
 		} else if (other.gameObject.CompareTag("Gate Trigger")) {
+			if (other.name.Contains("Red") && !keys[0].activeSelf)
+				gates[0].SetActive(false);
+			if (other.name.Contains("Green") && !keys[1].activeSelf)
+				gates[1].SetActive(false);
+			if (other.name.Contains("Blue") && !keys[2].activeSelf)
+				gates[2].SetActive(false);
+			if (other.name.Contains("Yellow") && !keys[3].activeSelf)
+				gates[3].SetActive(false);
+			
 
-
-		}else if (other.gameObject.CompareTag("Goal")) {
-
+		} else if (other.gameObject.CompareTag("Finish")) {
+			print("goal reached");
+			MazeController.victoryStatus = true;
 		}
 	}
 }

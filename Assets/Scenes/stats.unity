@@ -554,6 +554,7 @@ GameObject:
   - component: {fileID: 2029909477}
   - component: {fileID: 2029909476}
   - component: {fileID: 2029909475}
+  - component: {fileID: 2029909478}
   m_Layer: 5
   m_Name: BackBtn
   m_TagString: Untagged
@@ -618,7 +619,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2029909476}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2029909478}
+        m_MethodName: LoadByIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2029909476
@@ -655,6 +667,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2029909473}
   m_CullTransparentMesh: 0
+--- !u!114 &2029909478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2029909473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3cfa56532a91b4eb36268db77219e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2077709988
 GameObject:
   m_ObjectHideFlags: 0

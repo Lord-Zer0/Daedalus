@@ -53,9 +53,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\InventoryManager.cs" />
      <Compile Include="Assets\Scripts\KeyScript.cs" />
+     <Compile Include="Assets\Scripts\LeaderboardManager.cs" />
+     <Compile Include="Assets\Scripts\LoadGameOnClick.cs" />
      <Compile Include="Assets\Scripts\MazeController.cs" />
      <Compile Include="Assets\Scripts\MenuCamera.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
  <Reference Include="UnityEditor.StandardEvents">
